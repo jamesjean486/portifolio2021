@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    width: 90%;
+    display:inline-block;
+}
+
+html {
+    background-color: #FFF;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300; 
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+
+.row {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: block;
+}
+
+/*----------------------*/
+/*-----CABEÇALHO-------*/
+/*----------------------*/
+
+header {
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+        url(/resources/img/g.hour01.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-family: 'New Tegomin', serif;
+    margin: 5px;
+    color:darkorange;
+    text-align: center;
+}
+
+
+.hero-text-box {
+    width: 1200px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-around;
+    align-items: stretch;
+    animation: fadein 3s  linear;
+    transition: 3s;
+}
+
+@keyframes fadein{
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+
+
+
+
+
+/*-----------------------------------------------*/
+/*--------Definição dos botões do header--------*/
+/*----------------------------------------------*/
+
+
+.logo {
+    height: 100px;
+    margin-top: 20px;
+    float: left;
+}
+
+.main-nav {
+    list-style: none;
+    float: right;
+    margin-top: 55px;
+}
+
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 50px;
+    
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: silver;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+    
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid rgb(182, 132, 25) ;
+}
+
+
+
+/*--------------------------*/
+/*----CARACTERÍSTICAS------*/
+/*------------------------*/
+.row- {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: center;
+}
+.icon {
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+
+.icon-footer {
+    height: 50px;
+    margin-bottom: 30px;
+    text-align:center;
+    font-size: 45px; 
+    display: inline-block;
+    padding: 100px;
+}
+
+
+figcaption {
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    color: black;
+}
+
+
+section {
+    padding: 80px 0;
+}
+    
+h1, h2, h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-family:'Architects Daughter', cursive;
+    color:black;
+    font-size: 180%;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+    font-family:  'Dancing Script', cursive;
+    color: #000;
+}
+
+
+p {
+    color: black;
+}
+
+
+
+.long-copy{
+    font-family:  'Architects Daughter', cursive;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 15px;
+    color: #FFF;
+    display: inline-block;
+}
+
+hr{
+    color: darkgoldenrod;
+    width: 100%;
+    size: 5px;
+}
+
+
+/*------------------------------------*/
+/*--------------GALERIA-----------*/
+/*----------------------------------*/
+
+.images-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    
+}
+
+.images-portfolio li {
+    /*height: 200px;*/
+    display: inline-block;
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: -1;
+    overflow: hidden;
+}
+
+.photo img {
+    width:100%;
+    /*transform: scale(1.25);*/
+    filter: grayscale(1) blur(2px);
+    transition: filter 0.5s, transform 0.5s;
+}
+
+.photo img:hover {
+    /*transform: scale(1.03);*/
+    filter: none;
+}
+
+.section-photos {
+    padding: 20px;
+}   

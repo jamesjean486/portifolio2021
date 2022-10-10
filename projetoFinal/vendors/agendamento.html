@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/resources/css/agendamento.css">
+    <title>agendamento</title>
+</head>
+<body>
+    <nav>
+        <div class="row">
+            <h1>Agendamento</h1>
+            <ul class="main-nav">
+                <li><a href="/vendors/index.html">Página Inicial</a></li>
+                <li><a href="/vendors/ensaios.html">Ensaios</a></li>
+                <li><a href="/vendors/deploiments.html">Depoimentos</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+        <P>Primeiro cadastro? sem problemas, cadastre suas informações abaixo</P>
+    </div>    
+
+    <form>
+        <fieldset>
+            <div>
+                <label>Nome Completo: </label>
+                <input type="text" name="nome" id="nome">
+            </div>
+        </fieldset>
+        <br><br>
+        <div>
+            <label>E-mail: </label>
+            <input type="email" name="email" id="email">
+        </div>
+        <br><br>
+        <div>
+            <label>Qual serviço você deseja?</label>
+            <label>
+                <input type="radio" name="opção 1" value="Ensaio fotográfico" checked> Ensaio fotográfico
+            </label>
+            <label>
+                <input type="radio" name="opção 2" value="Eventos">Eventos
+            </label>
+        </div>
+        <br><br><br>
+        <div>
+            <label>Escolha o tipo de ensaio/evento que deseja</label>
+            <select name="Tipo de ensaios" id="Tipo">
+                <option value="">Ensaio externo</option>
+                <option value="">Ensaio criativo</option>
+                <option value="">Ensaio interno</option>
+                <option value="">Ensaio sensual</option>
+            </select>
+            <select name="" id="Tipo de evento">
+                <option value="">Casamento</option>
+                <option value="">Balada</option>
+                <option value="">Debutante</option>
+                <option value="">Gravidez</option>
+            </select>
+        </div>
+        <br><br><br>
+        <div>
+            <label>Descreva um pouco, sobre o serviço que deseja:</label>
+            <br>
+            <textarea name="descrição da atividade" id="descrição" cols="30" rows="10" maxlength="500"></textarea>
+        </div>
+        <br><br><br>
+        <fieldset id="agendamento">
+            <legend id="AG">Agendamento Para </legend>
+            <br>
+            <input type="date" name="Data:">
+            <input type="time" name="Hora:">
+        </fieldset>
+        <br><br>
+
+        <input type="submit" name="enviar" id="enviar">
+    </form>
+
+        <footer>
+            <button>
+                <figure class="icon-footer">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                    <figcaption>Fale conosco por Whatsapp</figcaption>
+                </figure>
+            
+            <figure class="icon-footer">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <figcaption>Confira nossa pagina do Instagram!</figcaption>
+            </figure>
+            
+            <figure class="icon-footer">
+                <ion-icon name="mail"></ion-icon>
+                <figcaption>Contate-nos por e-mail</figcaption>
+            </figure>
+        </footer>
+        
+    
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
